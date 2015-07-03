@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Restriccion-SCL",
+    "description": "El nombre de la aplicación"
+  },
+  "appDescription": {
+    "message": "Restricción vehicular en Santiago de Chile",
+    "description": "La descripción de la aplicación"
+  }
+}

@@ -1,0 +1,14 @@
+.DS_Store
+
+node_modules
+temp
+.tmp
+dist
+.sass-cache
+app/bower_components
+test/bower_components
+package
+.pem
+.crx
+
+app/scripts/config.js

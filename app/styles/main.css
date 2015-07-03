@@ -1,0 +1,49 @@
+body, html {
+  height: inherit;
+}
+
+.card {
+  color: white;
+  text-align: center;
+}
+
+.card.red > md-card-content {
+  background-color: #F44336;
+}
+
+.card.green > md-card-content {
+  background-color: #689F38;
+}
+
+.card.air_quality > md-card-content {
+  background-color: #0288D1;
+}
+
+.card.info > md-card-content {
+  background-color: #EEEEEE;
+  color: black;
+}
+
+.card > md-card-content {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.card > md-card-content .info_dow {
+  font-size: 1.4rem;
+}
+
+.card > md-card-content .info_date {
+  font-size: 1.2rem;
+}
+
+.link_more_info {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.legend {
+  font-weight: normal;
+  font-size: 0.8rem;
+}

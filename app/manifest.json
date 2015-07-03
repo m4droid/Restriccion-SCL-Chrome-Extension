@@ -1,0 +1,30 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "es",
+  "background": {
+    "scripts": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "bower_components/moment/min/moment-with-locales.min.js",
+      "scripts/chromereload.js",
+      "scripts/config.js",
+      "scripts/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Restriccion-SCL",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "gcm",
+    "storage",
+    "notifications"
+  ]
+}

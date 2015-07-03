@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es" ng-app="restriccionSclApp">
+<head>
+  <meta charset="utf-8">
+  <title>Restriccion-SCL</title>
+  <meta name="viewport" content="initial-scale=1" />
+  
+  <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- endbuild -->
+</head>
+<body ng-controller="AppCtrl">
+  <div layout="row" layout-sm="column" layout-align="center">
+    <div layout="column" flex>
+      <md-card class="card red" class="md-padding">
+        <md-card-content>
+          <div>{{data.sin_sello_verde || 'Sin restricción'}}</div>
+          <div class="legend">Sin sello verde</div>
+        </md-card-content>
+      </md-card>
+    </div>
+    <div layout="column" flex>
+      <md-card class="card green" class="md-padding">
+        <md-card-content>
+          <div>{{data.con_sello_verde || 'Sin restricción'}}</div>
+          <div class="legend">Con sello verde</div>
+        </md-card-content>
+      </md-card>
+    </div>
+    <div layout="column" flex>
+      <md-card class="card air_quality" class="md-padding">
+        <md-card-content>
+          <div>{{data.estado || 'Sin información'}}</div>
+          <div class="legend">Calidad del aire</div>
+        </md-card-content>
+      </md-card>
+    </div>
+    <div layout="column" flex>
+      <md-card class="card info" class="md-padding">
+        <md-card-content>
+          <div class="info_dow">{{today.format('dddd')}}</div>
+          <div class="info_date">{{today.format('DD-MM-YYYY')}}</div>
+          <a class="link_more_info" href="http://restriccion-scl.m4droid.com" target="_blank">Más información</a>
+        </div>
+      </md-card-content>
+    </div>
+  </div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <!-- endbower -->
+  <script src="bower_components/moment/min/locales.js"></script>
+  <!-- endbuild -->
+
+  <script src="scripts/config.js"></script>
+
+  <!-- build:js scripts/popup.js -->
+  <script src="scripts/popup.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
